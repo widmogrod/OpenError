@@ -11,13 +11,13 @@
     text-decoration: none;
 }
 .openError p {margin: 0px; padding: 0px;}
+
 .openError ul, 
 .openError li {margin: 0px; padding: 0px; list-style: none;}
 
 /*
     Elements
 */
-
 .openError.openErrorImageEditor {
     position: absolute;
     left: 200px;
@@ -25,7 +25,14 @@
     
     display: block;
     width: 400px;
-    height: 300px;
+
+    border: 1px solid silver;
+    background-color: #fff;
+
+  -webkit-box-shadow: 0px 0px 4px #999; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+     -moz-box-shadow: 0px 0px 4px #999; /* FF3.5 - 3.6 */
+          box-shadow: 0px 0px 4px #999; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+
 }
 
 .openError.openErrorDrawer {
@@ -35,30 +42,40 @@
     
     display: block;
     width: 350px;
-    height: 300px;
     
-    border: 1px solid gray;
+    border: 1px solid silver;
+    background-color: #fff;
+  
+  -webkit-box-shadow: 0px 0px 4px #999; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+     -moz-box-shadow: 0px 0px 4px #999; /* FF3.5 - 3.6 */
+          box-shadow: 0px 0px 4px #999; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+}
+
+.openError .oe-issueList {
+    overflow: auto;
+    height: 200px;
 }
 
 /*
     Layout
 */
-
 .openError .oe-borderBox {
     border: 1px solid #8d8d8d;
 }
-.openError .oe-issueBox {
-    border-top: 1px solid #ccc;
+.openError .oe-listBox {
+    font-size: 11px;
+    line-height: 13px;
 }
-
+.openError .oe-listBox .oe-spaceBox {
+    margin-bottom: 3px;
+    border: 1px solid #E6E6E6;
+}
 .openError .oe-spaceBox {
     padding: 5px;
 }
 
-.openError .oe-short 
-{
-	width: 100%;
-	overflow: hidden;
+.openError .oe-short {
+    
 }
 
 .openError .oe-left {
@@ -75,6 +92,7 @@
     margin-top: 12px;
     text-transform: uppercase;
 }
+
 /*
     TopBar
 */
@@ -158,7 +176,7 @@
     color: #fff;
     font-weight: bold;
     background-color: #5B74A8;
-    border-color: #29447E #29447E #1A356E;
+    border-color: #29447E;
     text-shadow: 0 1px 1px #465981;
 }
 
@@ -169,7 +187,7 @@
     display: block;
     width: 16px;
     height: 16px;
-    padding: 3px;
+    padding: 2px;
     background: transparent none 50% 50% no-repeat;
     overflow: hidden;
     text-indent: -200em;
