@@ -1,0 +1,200 @@
+.openError 
+{
+    font-size: 13px;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    color: #999;
+    line-height: 15px;
+}
+.openError a {
+    cursor: pointer;
+    color: #3B5998;
+    text-decoration: none;
+}
+.openError p {margin: 0px; padding: 0px;}
+.openError ul, 
+.openError li {margin: 0px; padding: 0px; list-style: none;}
+
+/*
+    Elements
+*/
+
+.openError.openErrorImageEditor {
+    position: absolute;
+    left: 200px;
+    top: 150px;
+    
+    display: block;
+    width: 400px;
+    height: 300px;
+}
+
+.openError.openErrorDrawer {
+    position: absolute;
+    right: 0px;
+    top: 100px;
+    
+    display: block;
+    width: 350px;
+    height: 300px;
+    
+    border: 1px solid gray;
+}
+
+/*
+    Layout
+*/
+
+.openError .oe-borderBox {
+    border: 1px solid #8d8d8d;
+}
+.openError .oe-issueBox {
+    border-top: 1px solid #ccc;
+}
+
+.openError .oe-spaceBox {
+    padding: 5px;
+}
+
+.openError .oe-short 
+{
+	width: 100%;
+	overflow: hidden;
+}
+
+.openError .oe-left {
+    float: left;
+}
+.openError .oe-right {
+    float: right;
+}
+
+.openError .oe-title {
+    font-size: 9px;
+    font-weight: bold;
+    color: #999;
+    margin-top: 12px;
+    text-transform: uppercase;
+}
+/*
+    TopBar
+*/
+.openError .oe-topBar 
+{
+    clear: both;
+    overflow: hidden;
+    border-bottom: 1px solid #E6E6E6;
+
+    font-size: 9px;
+    line-height: 9px;
+    height: 15px;
+    margin-top: 15px;
+}
+.openError .oe-topBar .oe-title  {
+    float:left;
+    margin-top: 0px;
+}
+
+/*
+    ToolBar
+*/
+
+.openError .oe-toolbarBox {
+    background-color: #F2F2F2;
+    border-top: 1px solid #E6E6E6;
+    height: 30px;
+}
+.openError .oe-toolbarBox .oe-controls {
+    padding: 4px 5px;
+}
+
+/*
+    Controls
+*/
+.openError .oe-controls {
+    overflow: hidden;
+}
+.openError .oe-controls li {
+    display: inline-block;
+    float: left;
+    margin-left: 0px;
+    margin-right: 9px;
+}
+.openError .oe-controls.oe-right li {
+    margin-left: 9px;
+    margin-right: 0px;
+}
+
+/*
+    Actions
+*/
+.openError .oe-action {
+    color: grey;
+    font-size: 11px;
+    line-height: 13px;
+    padding: 3px 16px;
+    border: 1px solid #F2F2F2;
+    
+    cursor: pointer;
+    display: inline-block;
+    
+    text-shadow: 0 1px 1px #fff;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+    white-space: nowrap;
+
+}
+.openError .oe-action:hover {
+    border-color: #c9c9c9;
+    color: #333;
+}
+.openError .oe-action:active {
+    border-color: #999;
+    color: #333;
+}
+
+.openError .oe-action.oe-active,
+.openError .oe-action.oe-active:hover {
+    color: #fff;
+    font-weight: bold;
+    background-color: #5B74A8;
+    border-color: #29447E #29447E #1A356E;
+    text-shadow: 0 1px 1px #465981;
+}
+
+/*
+    Ikony
+*/
+.openError .oe-icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+    padding: 3px;
+    background: transparent none 50% 50% no-repeat;
+    overflow: hidden;
+    text-indent: -200em;
+}
+.openError .oe-icon.oe-icon-crop {
+    background-image: url("images/crop.png");
+}
+.openError .oe-icon.oe-icon-pencil {
+    background-image: url("images/pencil.png");
+}
+
+
+/*
+    Form
+*/
+.openError textarea {
+    width: 100%;
+    min-height: 2em;
+    display: block;
+    color:#999;
+    border: none;
+    padding: 3px;
+    outline: none;
+    font-size: 13px;
+}
+.openError textarea:focus {
+    color:#000;    
+}
